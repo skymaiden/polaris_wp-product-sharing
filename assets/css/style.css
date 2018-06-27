@@ -1,0 +1,41 @@
+.pps_label {
+  font-style: italic;
+  font-size: .875em;
+  margin: .618em 0;
+}
+.pps_list {
+  display: flex;
+  margin: 0;
+}
+.pps_item {
+  height: 48px;
+  list-style: none;
+  margin: 0 20px 0 0;
+  width: 48px;
+}
+.pps_item a:hover {
+  color: #000;
+}
+.pps_item a {
+  display: block;
+}
+.pps_item svg {
+  height: 100%;
+  width: 100%;
+}
+
+/* This component is rendered after the summary, let's make it match. */
+.storefront-full-width-content.single-product div.product .summary {
+  margin-bottom: 1.41575em;
+}
+.polaris-product-sharing {
+  margin-bottom: 2.617924em; /* was summary margin */
+}
+@media (min-width: 768px) {
+  .storefront-full-width-content .polaris-product-sharing {
+    width: 56.5217391304%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 3.706325903em; /* was summary margin */
+  }
+}
